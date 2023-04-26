@@ -1,0 +1,19 @@
+query GetBundleQuery($bundleId: String!) {
+    getBundle(bundleId: $bundleId) {
+        bundleId
+        componentFoo: component(componentName: "foo") {
+            componentName
+            artifactLorem: artifact(artifactName: "lorem") {
+                artifactName
+                someValue
+            }
+        }
+        componentBar: component(componentName: "bar") {
+            componentName
+            artifactIpsum: artifact(artifactName: "ipsum") {
+                artifactName
+                someValue
+            }
+        }
+    }
+}

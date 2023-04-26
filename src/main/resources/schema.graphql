@@ -1,0 +1,18 @@
+type Artifact {
+    artifactName: String!
+    someValue: String!
+}
+
+type Component {
+    componentName: String!
+    artifact(artifactName: String!): Artifact
+}
+
+type Bundle {
+    bundleId: String!
+    component(componentName: String!): Component
+}
+
+type Query {
+    getBundle(bundleId: String!): Bundle
+}
