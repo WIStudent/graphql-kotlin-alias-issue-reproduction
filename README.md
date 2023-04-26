@@ -1,6 +1,6 @@
 # graphql-kotlin alias issue reproduction
 
-This project is a minimal reproduction of an issue with [graphql-kotlin](https://github.com/ExpediaGroup/graphql-kotlin)
+This project is a minimal reproduction of an [issue](https://github.com/ExpediaGroup/graphql-kotlin/issues/1760) with [graphql-kotlin](https://github.com/ExpediaGroup/graphql-kotlin)
 where aliases are not considered sufficiently during the generation of result classes.
 
 Take the following schema and query:
